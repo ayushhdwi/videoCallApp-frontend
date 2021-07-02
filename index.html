@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CallScreen</title>
+	<link rel="stylesheet" href="./src/css/index.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="grid-container">
+
+		<div class="video-screen">
+			<div class="videoBox">
+				<div class="pName">
+					Name1
+				</div>
+			</div>
+			<div class="videoBox">
+				<div class="pName">
+					Name2
+				</div>
+			</div>
+			<div class="videoBox">
+				<div class="pName">
+					Name3
+				</div>
+			</div>
+			<div class="videoBox">
+				<div class="pName">
+					Name4
+				</div>
+			</div>
+
+			<div class="btn-bar">
+				<div class="sub-btn-bar">
+					<button class="control-btns toggle-cam" onclick="toggleVideo()">
+						<i class="material-icons">videocam_off</i>
+					</button>
+					<button class="control-btns toggle-mute " onclick="toggleMute()">
+						<i class="material-icons end-call">mic_off</i>
+					</button>
+					<button class="control-btns" onclick="endCall()">
+						<i class="material-icons">call_end</i>
+					</button>
+					<button class="control-btns toggle-chat" onclick="toggleChat()">
+						<i class="material-icons">chat</i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="chat-section">
+
+			<h3>Meeting Chat <button onclick="toggleChat()"><i class="medium material-icons">close</i></button></h3>
+			
+			<div class="chatArea">
+				<div class="chatheads">
+					<h4>Name</h4>
+					<p>messege in the chat box</p>
+					<p>2:12 PM</p>
+				</div>
+			</div>
+			
+			<div class="chat-controls">
+				<input type="text" class="sendChat" placeholder="Write Messege To Team">
+				<button><i class="material-icons">send</i></button>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./src/js/index.js"></script>
+</html>
